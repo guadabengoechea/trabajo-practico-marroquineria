@@ -1,0 +1,56 @@
+<%- include('partials/header') %>
+
+<!-- Línea negra debajo del navbar -->
+<div style="background-color: black; height: 12px; width: 100%;"></div>
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="espacio-negro"></div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/img/Carousel1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/img/Carousel2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/img/Carousel3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>
+
+<!-- Productos -->
+<div class="productos-contenedor">
+  <% const productos = [
+    { img: 'totenegra.jpeg', nombre: 'Bandolera Bassic Gris', desc: 'PU, estructura rígida.', precio: 28000 },
+    { img: 'billeterapierrenegra.jpeg', nombre: 'Billetera Pierre Taken', desc: 'Cuero ecológico negro.', precio: 25000 },
+    { img: 'mochilacamuflada.jpeg', nombre: 'Mochila Camouflage', desc: 'Mini camuflada negra.', precio: 55000 },
+    { img: 'mochilamarronecocuero.jpeg', nombre: 'Mochila Terra', desc: 'Cuero ecológico soft.', precio: 58000 },
+    { img: 'carteratrendy.jpeg', nombre: 'Cartera Trendy Blackie', desc: 'Ecocuero grueso.', precio: 41000 },
+    { img: 'cartucheraeverlast.jpeg', nombre: 'Cartuchera Everlast', desc: 'Lona reforzada.', precio: 13000 },
+    { img: 'carterajet.jpeg', nombre: 'Cartera Jet Negra', desc: 'Jet cierre desmontable.', precio: 39000 },
+    { img: 'cruzadaprattys.jpeg', nombre: 'Tote Cruzada Prattys', desc: 'Cuero ecológico natural.', precio: 35000 }
+  ]; %>
+
+  <% for (let i = 0; i < productos.length; i++) { %>
+    <% if (i % 4 === 0) { %><div class="productos-contenedor"><% } %>
+      <div class="card" style="width: 18rem;">
+        <img src="/img/<%= productos[i].img %>" class="card-img-top" alt="<%= productos[i].nombre %>">
+        <div class="card-body">
+          <h5 class="card-title"><%= productos[i].nombre %></h5>
+          <p class="card-text"><%= productos[i].desc %></p>
+          <p class="card-text"><strong>$<%= productos[i].precio.toLocaleString('es-AR') %>.-</strong></p>
+          <button class="boton-comprar">Comprar</button>
+        </div>
+      </div>
+    <% if ((i + 1) % 4 === 0 || i === productos.length - 1) { %></div><% } %>
+  <% } %>
+</div>
+
+<%- include('partials/footer') %>

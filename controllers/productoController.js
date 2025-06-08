@@ -1,0 +1,69 @@
+const fs = require('fs');
+const path = require('path');
+const rutaArchivo = path.join(__dirname, '../models/productos.json');
+
+function leerProductos() {
+  const datos = fs.readFileSync(rutaArchivo, 'utf-8');
+  return JSON.parse(datos);
+}
+
+function guardarProductos(productos) {
+  fs.writeFileSync(rutaArchivo, JSON.stringify(productos, null, 2));
+}
+
+module.exports = {
+  obtenerProductos(req, res) {
+    const productos = leerProductos();
+    res.render('productos', { productos });
+  },
+
+  mostrarFormularioNuevo(req, res) {
+    res.render('nuevoProducto');
+  },
+
+  crearProducto(req, res) {
+    const productos = leerProductos();
+    const nuevo = {
+      id: Date.now().toString(),
+      nombre: req.body.nombre,
+      descripcion: req.body.descripcion,
+      precio: req.body.precio,
+      imagen: req.body.imagen
+    };
+    productos.push(nuevo);
+    guardarProductos(productos);
+    res.redirect('/productos');
+  },
+
+  mostrarFormularioEditar(req, res) {
+    const productos = leerProductos();
+    const producto = productos.find(p => p.id === req.params.id);
+    res.render('editarProducto', { producto });
+  },
+
+
+  actualizarProducto(req, res) {
+    let productos = leerProductos();
+    productos = productos.map(p => {
+      if (p.id === req.params.id) {
+        return {
+          ...p,
+          nombre: req.body.nombre,
+          descripcion: req.body.descripcion,
+          precio: req.body.precio,
+          imagen: req.body.imagen
+        };
+      }
+      return p;
+    });
+    guardarProductos(productos);
+    res.redirect('/productos');
+  },
+
+  eliminarProducto(req, res) {
+    let productos = leerProductos();
+    productos = productos.filter(p => p.id !== req.params.id);
+    guardarProductos(productos);
+    res.redirect('/productos');
+  }
+};

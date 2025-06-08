@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomada</title>
+    <!-- Importar CSS -->
+    <link rel="stylesheet" href="marroquineria.css">
+    <!-- Importar Font Awesome iconos -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-5XxR03T16Z9QkPO8RpIsvZcKJ9lgh5ly9ht7rh9f1V0iGfQ3K9zFoHnOxGuhNm3If0UOahxub/Ip9Y1xIdG9DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />    <!-- Importar Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Tipografía Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #eae0df;">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Nomada</a>
+            <!-- Contenido colapsable -->
+            <div id="navbarText" class="navbar-text">
+              <ul class="navbar-nav ms-auto"><!-- ms-auto para alinear a la derecha -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./form.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            
+        <!-- Botón hamburguesa -->
+         <div class="hamburguesa"> 
+            <button type="button"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        </div>
+    </nav>
+
+</nav>
+
+<!-- Línea negra debajo del navbar -->
+<div style="background-color: black; height: 12px; width: 100%;">
+
+</div>
+
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="espacio-negro"></div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/Carousel1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./img/Carousel2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./img/Carousel3.jpg" alt="Third slide">
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <!-- Cards de Productos -->
+    <div class="productos-contenedor">
+        <div class="card" style="width: 18rem;">
+            <img src="./img/totenegra.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Bandolera Bassic Gris</h5>
+                <p class="card-text">Confeccionada en PU, de estructura rígida.
+                </p>
+                <p class="card-text"><strong>$28.000.-</strong>
+                </p>               
+                <button class="boton-comprar"> Comprar</button>
+                    
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./img/billeterapierrenegra.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Billetera Pierre Taken</h5>
+            <p class="card-text">Billetera de cuero ecologico negra doble compartimento</p>
+            <p class="card-text"><strong>$25.000.-</strong>
+            </p>
+            <button class="boton-comprar"> Comprar</button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./img/mochilacamuflada.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Mochila Camouflage</h5>
+            <p class="card-text">Mini mochila camuflada negra con bolsillo frontal</p>
+            <p class="card-text"><strong>$55.000.-</strong>
+            </p>
+            <button class="boton-comprar"> Comprar</button>
+            </div>
+        </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/mochilamarronecocuero.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Mochila Terra</h5>
+                <p class="card-text">Mochila marron cuero ecologico soft touch</p>
+                <p class="card-text"><strong>$58.000.-</strong>
+                </p>
+                <button class="boton-comprar"> Comprar</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="productos-contenedor">
+        <div class="card" style="width: 18rem;">
+            <img src="./img/carteratrendy.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cartera Trendy Blackie</h5>
+                <p class="card-text">Confeccionada en ecocuero grueso, extraresistente
+                </p>
+                <p class="card-text"><strong>$41.000.-</strong>
+                </p>
+                <button class="boton-comprar"> Comprar</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./img/cartucheraeverlast.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Cartuchera Everlast</h5>
+            <p class="card-text">Lona extrareforzada cilindrica con colores fluor</p>
+            <p class="card-text"><strong>$13.000.-</strong>
+            </p>
+            <button class="boton-comprar"> Comprar</button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./img/carterajet.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Cartera Jet Negra</h5>
+            <p class="card-text">Cartera Jet cierre desmontable y regulable</p>
+            <p class="card-text"><strong>$39.000.-</strong>
+            </p>
+            <button class="boton-comprar"> Comprar</button>
+            </div>
+        </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/cruzadaprattys.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Tote Cruzada Prattys</h5>
+                <p class="card-text">Mochila tote cuero ecologico natural touch</p>
+                <p class="card-text"><strong>$35.000.-</strong>
+                </p>
+                <button class="boton-comprar"> Comprar</button>
+                </div>
+        </div>
+    </div>
+    <!-- Bootstrap funcionalidad para el carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="contenedor-footer">
+        <div class="columna">
+            <h4>NOMADA</h4>
+            <div class="iconos">
+                <a href="https://facebook.com" class="facebook" target="_blank">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" class="instagram" target="_blank">
+                    <img src="img/instagram.png" alt="instagram">
+                </a>
+                <a href="https://wa.me/5491112345678" class="whatsapp" target="_blank">
+                    <img src="img/whatsapp.png" alt="Whatsapp">
+                </a>
+            </div>
+        </div>
+        <div class="columna">
+            <h3>Contacto</h3>
+            <p>info@nomada.com</p>
+            <p>+54 9 11 1234 5678</p>
+        </div>
+        <div class="columna">
+            <h3>Ubicación</h3>
+            <p>Av. Belgrano 4321, CABA</p>
+            <p>Buenos Aires, Argentina</p>
+        </div>
+    </div>
+
+    <div class="derechos">
+        &copy; 2025 - E-commerce. Todos los derechos reservados.
+    </div>
+
+</footer>
+</html>
