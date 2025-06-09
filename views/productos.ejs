@@ -1,17 +1,15 @@
 <%- include('partials/header') %>
 <div class="cards">
   <% productos.forEach(producto => { %>
-    <div class="card">
-      <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>">
-      <h2><%= producto.nombre %></h2>
-      <p><%= producto.descripcion %></p>
-      <p><%= producto.id %></p>
-      <p><strong>$<%= producto.precio %></strong></p>
-      <form action="/productos/<%= producto.id %>/eliminar" method="POST">
-        <a href="/productos/editar/<%=producto.id%>">Editar</a>
-        <button type="submit">Eliminar</button>
-      </form>
-    </div>
+  <div class="card">
+    <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>" />
+    <h2><%= producto.nombre %></h2>
+    <p><%= producto.descripcion %></p>
+    <p><%= producto.id %></p>
+    <p><strong>$<%= producto.precio %></strong></p>
+    <a href="/productos/editar/<%=producto.id%>">Editar</a>
+    <a href="/productos/eliminar/<%=producto.id%>">Eliminar</a>
+  </div>
   <% }) %>
 </div>
 <%- include('partials/footer') %>

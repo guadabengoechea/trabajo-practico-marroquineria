@@ -7,6 +7,7 @@ router.get('/nuevo', controller.mostrarFormularioNuevo);
 router.post('/', controller.crearProducto);
 router.get('/editar/:id', controller.mostrarFormularioEditar);
 router.post('/:id', controller.actualizarProducto);
-router.post('/eliminar/:id', controller.eliminarProducto);
+router.get('/eliminar/:id', controller.eliminarProducto);
+router.delete("/destruir/:id", controller.destruirProducto);
 
 module.exports = router;
