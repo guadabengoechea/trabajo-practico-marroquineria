@@ -34,7 +34,24 @@
           />
           Nomada
         </a>
-        <a class="navbar-brand" href="#">Nomada</a>
+
+        <form action="/productos/buscar" method="GET">
+          <div style="display: flex; gap: 10px">
+            <input
+              type="text"
+              placeholder="Ingrese criterio de búsqueda"
+              id="criterio"
+              name="criterio"
+              style="min-width: 100%"
+            />
+            <button>Buscar</button>
+          </div>
+        </form>
+
+        <form action="/productos" method="GET">
+          <button>Limpiar</button>
+        </form>
+
         <div id="navbarText" class="navbar-text">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">

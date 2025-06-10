@@ -21,6 +21,17 @@ module.exports = {
     res.render("nuevoProducto");
   },
 
+  productosFiltrados(req, res) {
+    const criterio = req.query.criterio;
+
+    const productos = leerProductos();
+    const productosFiltrados = productos.filter((p) =>
+      p.nombre.toUpperCase().includes(criterio.toUpperCase())
+    );
+
+    res.render("productos", { productos: productosFiltrados });
+  },
+
   crearProducto(req, res) {
     const productos = leerProductos();
     const nuevo = {

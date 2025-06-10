@@ -4,6 +4,7 @@ const controller = require('../controllers/productoController');
 
 router.get('/', controller.obtenerProductos);
 router.get('/nuevo', controller.mostrarFormularioNuevo);
+router.get('/buscar', controller.productosFiltrados);
 router.post('/', controller.crearProducto);
 router.get('/editar/:id', controller.mostrarFormularioEditar);
 router.put('/editar/:id', controller.actualizarProducto);
