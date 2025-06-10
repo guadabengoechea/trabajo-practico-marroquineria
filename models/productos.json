@@ -2,23 +2,23 @@
   {
     "id": "1749430365603",
     "nombre": "Cartera",
-    "descripcion": "Color marron",
-    "precio": "",
-    "imagen": ""
+    "descripcion": "Color negro",
+    "precio": "10000",
+    "imagen": "mochilacamuflada.jpeg"
   },
   {
     "id": "174943203656033",
     "nombre": "Cinto",
     "descripcion": "negro",
     "precio": "",
-    "imagen": ""
+    "imagen": "mochilamarronecocuero.jpeg"
   },
   {
     "id": "1749514753272361",
     "nombre": "Cartuchera ",
     "descripcion": "Lila",
     "precio": "558",
-    "imagen": "oo"
+    "imagen": "Cartuchera.jpeg"
   },
   {
     "id": "1749515812845",
