@@ -1,5 +1,6 @@
 <%- include('partials/header') %>
-<div class="cards">
+
+<div class="cards" style="display: flex; flex-wrap: wrap">
   <% productos.forEach(producto => { %>
   <div class="card">
     <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>" />
