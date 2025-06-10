@@ -34,12 +34,14 @@ module.exports = {
 
   crearProducto(req, res) {
     const productos = leerProductos();
+    const imagen = req.file ? req.file.filename : null;
+    
     const nuevo = {
       id: Date.now().toString(),
       nombre: req.body.nombre,
       descripcion: req.body.descripcion,
       precio: req.body.precio,
-      imagen: req.body.imagen,
+      imagen,
     };
     productos.push(nuevo);
     guardarProductos(productos);

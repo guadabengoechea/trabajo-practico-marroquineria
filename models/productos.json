@@ -7,12 +7,6 @@
     "imagen": ""
   },
   {
-    "id": "1749514757361",
-    "nombre": "Cartuchera ",
-    "descripcion": "Estampada ",
-    "precio": "558",
-    "imagen": "oo"
-  },  {
     "id": "174943203656033",
     "nombre": "Cinto",
     "descripcion": "negro",
@@ -25,5 +19,12 @@
     "descripcion": "Lila",
     "precio": "558",
     "imagen": "oo"
+  },
+  {
+    "id": "1749515812845",
+    "nombre": "Riñonera",
+    "descripcion": "Riñonera super fashion",
+    "precio": "12345",
+    "imagen": "1749515812834-billeterapierrenegra.jpeg"
   }
 ]

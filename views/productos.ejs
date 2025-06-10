@@ -1,9 +1,11 @@
 <%- include('partials/header') %>
 
+<a href="/productos/nuevo">Crear un producto</a>
+
 <div class="cards" style="display: flex; flex-wrap: wrap">
   <% productos.forEach(producto => { %>
   <div class="card">
-    <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>" />
+    <img src="/img/<%= producto.imagen %>" alt="<%= producto.nombre %>" />
     <h2><%= producto.nombre %></h2>
     <p><%= producto.descripcion %></p>
     <p><%= producto.id %></p>
@@ -12,7 +14,5 @@
     <a href="/productos/eliminar/<%=producto.id%>">Eliminar</a>
   </div>
   <% }) %>
-
-  <a href="/productos/nuevo">Crear un producto</a>
 </div>
 <%- include('partials/footer') %>
