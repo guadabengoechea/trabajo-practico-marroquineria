@@ -1,30 +1,51 @@
 [
   {
-    "id": "1749430365603",
-    "nombre": "Cartera",
-    "descripcion": "Color negro",
-    "precio": "10000",
-    "imagen": "mochilacamuflada.jpeg"
+    "id": "1749603638509",
+    "nombre": "Cartuchera Everlast",
+    "descripcion": "Lona extrareforzada cilindrica con colores fluor",
+    "precio": "12600",
+    "imagen": "1749603638489-cartucheraeverlast.jpeg"
   },
   {
-    "id": "174943203656033",
-    "nombre": "Cinto",
-    "descripcion": "negro",
-    "precio": "",
-    "imagen": "mochilamarronecocuero.jpeg"
+    "id": "1749603780759",
+    "nombre": "Bandolera Bassic Gris",
+    "descripcion": "Confeccionada en PU, de estructura rígida",
+    "precio": "14100",
+    "imagen": "totenegra.jpeg"
   },
   {
-    "id": "1749514753272361",
-    "nombre": "Cartuchera ",
-    "descripcion": "Lila",
-    "precio": "558",
-    "imagen": "Cartuchera.jpeg"
+    "id": "1749603856173",
+    "nombre": "Cartera Trendy Blackie",
+    "descripcion": "Confeccionada en ecocuero grueso, extraresistente",
+    "precio": "17900",
+    "imagen": "1749603856029-carteratrendy.jpeg"
   },
   {
-    "id": "1749515812845",
-    "nombre": "Riñonera",
-    "descripcion": "Riñonera super fashion",
-    "precio": "12345",
-    "imagen": "1749515812834-billeterapierrenegra.jpeg"
+    "id": "1749603903623",
+    "nombre": "Cartera Jet Negra",
+    "descripcion": "Cartera Jet cierre desmontable y regulable",
+    "precio": "17000",
+    "imagen": "1749603903606-carterajet.jpeg"
+  },
+  {
+    "id": "1749604040996",
+    "nombre": "Mochila Terra",
+    "descripcion": "Mochila marron cuero ecologico soft touch",
+    "precio": "15500",
+    "imagen": "1749604040924-mochilamarronecocuero.jpeg"
+  },
+  {
+    "id": "1749604081950",
+    "nombre": "Mochila Camouflage",
+    "descripcion": "Mini mochila camuflada negra con bolsillo frontal",
+    "precio": "14500",
+    "imagen": "1749604081811-mochilacamuflada.jpeg"
+  },
+  {
+    "id": "1749604128346",
+    "nombre": "Billetera Pierre Taken",
+    "descripcion": "Billetera de cuero ecologico negra doble compartimento",
+    "precio": "13700",
+    "imagen": "1749604128290-billeterapierrenegra.jpeg"
   }
 ]
