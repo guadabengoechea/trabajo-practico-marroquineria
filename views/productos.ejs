@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
 
-<a href="/productos/nuevo">Crear un producto</a>
+<a href="/nuevo">Crear un producto</a>
 
 <div class="cards" style="display: flex; flex-wrap: wrap">
   <% productos.forEach(producto => { %>
@@ -10,8 +10,8 @@
     <p><%= producto.descripcion %></p>
     <p><%= producto.id %></p>
     <p><strong>$<%= producto.precio %></strong></p>
-    <a href="/productos/editar/<%=producto.id%>">Editar</a>
-    <a href="/productos/eliminar/<%=producto.id%>">Eliminar</a>
+    <a href="/editar/<%=producto.id%>">Editar</a>
+    <a href="/eliminar/<%=producto.id%>">Eliminar</a>
   </div>
   <% }) %>
 </div>

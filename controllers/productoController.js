@@ -45,7 +45,7 @@ module.exports = {
     };
     productos.push(nuevo);
     guardarProductos(productos);
-    res.redirect("/productos");
+    res.redirect("/");
   },
 
   mostrarFormularioEditar(req, res) {
@@ -69,7 +69,7 @@ module.exports = {
       return p;
     });
     guardarProductos(productos);
-    res.redirect("/productos");
+    res.redirect("/");
   },
 
   eliminarProducto: (req, res) => {
@@ -83,6 +83,6 @@ module.exports = {
     let productos = leerProductos();
     productos = productos.filter((p) => p.id !== req.params.id);
     guardarProductos(productos);
-    res.redirect("/productos");
+    res.redirect("/");
   },
 };
